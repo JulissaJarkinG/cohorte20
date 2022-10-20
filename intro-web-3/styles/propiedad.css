@@ -1,0 +1,16 @@
+#titulo{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font: size 2px;
+
+    color: hsla(244, 100%, 64%, 0.753);
+
+    border: 10px solid rgb(58, 225, 255);
+
+    width: 400px;
+    height: 100px;
+    overflow: scroll;
+    margin: 200px;
+    padding: 100px;
+    padding-left: 50px;
+
+}

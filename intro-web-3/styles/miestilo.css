@@ -1,0 +1,31 @@
+/*p{
+    color: rgb(178, 252, 109)
+}*/
+
+pre{
+    color: aqua;
+}
+/* Selector universal*/
+* {
+    color:chartreuse;
+}
+/*Selector de tipo*/
+em{
+    color:crimson;
+}
+span{
+    color:brown;
+}
+/*Selector de clase*/
+.titulo{
+color:blueviolet
+}
+.bl {
+    float:right;
+    background-color:rgb(93, 166, 250);
+
+}
+/*Selector de ID*/
+#selector{
+color:dimgray;
+}
