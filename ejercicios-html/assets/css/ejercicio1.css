@@ -1,0 +1,19 @@
+
+main{
+    background-color: yellow;
+}
+nav{
+    background-color: rgb(7, 201, 33);
+}
+body{
+    background-color: rgb(156, 153, 145);
+}
+footer{
+    background-color: rgb(92, 101, 110);
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    margin: 0; padding: 0;
+}
