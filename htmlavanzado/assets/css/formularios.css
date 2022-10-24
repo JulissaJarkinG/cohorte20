@@ -1,0 +1,30 @@
+/*FORM STARTS*/
+form{
+    display: inline-block;
+    padding: 10px;
+    width: 250px;
+    background-color: rgb(206, 255, 239);
+}
+label {
+    display: inline-block;
+    width: 80px;
+}
+.campo {
+    width: 150px;
+}
+#btn {
+    background-color: rgb(138, 154, 226);
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    font-weight: 600;
+    color: azure;
+}
+#btn:hover{
+    transform: scale(0.8);
+    color:blueviolet
+
+}
+
+/*FORM ENDS*/
