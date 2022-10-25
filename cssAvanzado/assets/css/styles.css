@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fasthand&family=Fuzzy+Bubbles&family=Montserrat:wght@300;500;700&display=swap');
+*{
+   /*  font-size: 20px; */
+}
+.padre{
+    font-size: 20px;
+}
+.parrafo1{
+    font-family: 'Comforter Brush', cursive;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.parrafo2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+/*root em
+rem
+toma en cuenta el tamaño de fuente 
+fijado por el navegador
+*/
+.blabla{
+    font-family: 'Fasthand', cursive;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.blabla2{
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 2rem;
+}
+.blabla3{
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 1.5rem;
+}
+.fondo{
+    background-color: rgb(206, 154, 255);
+}
+h1{
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: 500;
+    font-size: 3rem;
+}
+h2{
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 3rem;
+}
