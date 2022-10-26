@@ -1,0 +1,40 @@
+/* position: statis;*/
+/*relative, tiene como base la posición original del elemento*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.padre{
+    border: 3px dashed green;
+    height: 800px;
+}
+.cuadro{
+    border: 2px solid blueviolet;
+    width: 200px;
+    height: 200px;
+}
+.uno{
+     background-color: aquamarine;
+    /*position: relative;*/
+    /*top, left, bottom, right*/
+    /* top: -50px; */
+    /*right: 100px;*/
+ /*    left: 100px; */ 
+ 
+}
+/* absolute: retira el elemento del flujo normal el documento
+Se mide a partir de la parte visible del navegador*/
+.dos{
+    background-color: rgb(65, 122, 230);
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+  
+}
+.tres{
+    background-color: coral;
+    position: sticky;
+    top: 0px;
+    /*posicion con top, bottom, left, right 
+    y debe haber suficiente espacio en su elemento padre*/
+}
