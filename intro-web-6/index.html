@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introducción a Bootstrap 5</title>
-    <link rel="stylesheet" href="./bootstrap-5/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./bootstrap-5/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/css0.css">
 
 </head>
@@ -16,8 +16,8 @@
             Este es un párrafo dentro de un contenedor "container"
         </p>
 
-    </div>
-    <div class="container">
+   <div class="container">
+  
         <div class="row">
           <div class="col uno">
             Column
@@ -29,8 +29,10 @@
             Column
           </div>
         </div>
+
+       
 <!-- Esta es una nueva fila -->
-        <div class="row">
+       <!--  <div class="row">
             <div class="col">
               1 of 3
             </div>
@@ -40,11 +42,127 @@
             <div class="col">
               3 of 3
             </div>
-          </div>
+        </div> -->
 
+      
+
+ <!-- Una nueva y segunda fila -->
+   <div class="row text-center">
+        <div class="col nuno">
+          1 de 3
+        </div>
+        
+        <div class="col ancho">
+          2 de 3 (más ancho)
+        </div>
+        
+        <div class="col ntres">
+          3 de 3
+        </div>
+    </div>
+
+    <!-- tercera fila -->
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-2">
+        1 de 3
       </div>
-   
-      <script src="./bootstrap-5/js/bootstrap.bundle.min.js"></script>
+      <div class="col-md-auto">
+        Contenido de ancho variable
+      </div>
+      <div class="col col-lg-2">
+        3 de 3
+      </div>
+    </div>
+
+<!-- pruebas -->
+<div class="row">
+  <div class="col Cuno">col </div>
+  <div class="col Cdos">col </div>
+  <div class="col Ctres">col </div>
+  <div class="col Ccuatro">col </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-8 Coluno">col-sm-8</div>
+  <div class="col-sm-4 Coldos">col-sm-4</div>
+</div>
+
+    <!-- Div de container -->
+  </div>
+
+ <!-- Esto es un botón -->
+<button type="button" class="btn btn-primary">Primary</button>    
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-link">Enlace</button>
+
+<input class="'btn btn- primary" type="reset" value="Reset">
+<button type="button" class="btn btn-primary btn-lg"> Large Button</button>
+<button type="button" class="btn btn-secundary btn-lg"> Large Button</button>
+<button type="button" class="btn btn-primary" disabled> Primary Button</button>
+<a class="btn btn-primary disabled" role="button" aria-disabled="false">Primary link</a>
+
+<div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+
+
+<script>
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+const alert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    alert('Nice, you triggered this alert message!', 'success')
+  })
+}
+</script>
+
+<!-- Esto es un componente modal -->
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ... Holiwis
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="./bootstrap-5/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

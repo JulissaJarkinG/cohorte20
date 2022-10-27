@@ -1,5 +1,5 @@
 .container{
-    //background-color: aquamarine;
+    /*background-color: aquamarine;*/
     margin-top: 20px;
 }
 
@@ -13,4 +13,34 @@
 
 .ancho{
     background-color: aquamarine ;
+}
+body{
+    padding: 30px;
+}
+.nuno{
+    background-color: blue;
+}
+.ntres{
+    background-color: violet;
+}
+
+.Cuno{
+    background-color: darkorchid;
+
+}
+.Cdos{
+    background-color: darksalmon;
+}
+.Ctres{
+    background-color: darkolivegreen;
+
+}
+.Ccuatro{
+    background-color: darkorange;
+}
+.Coluno{
+    background-color: aqua;
+}
+.Coldos{
+    background-color: brown;
 }

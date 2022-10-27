@@ -1,0 +1,10 @@
+.altura-img{
+    height:calc(100vh - 56px); 
+}
+.altura-card{
+    height: 250px;
+}
+/*
+vh alto
+wh ancho
+*/
