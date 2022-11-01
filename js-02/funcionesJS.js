@@ -96,11 +96,34 @@ console.log("El precio total con función flecha: "+ precioTotal); */
 let miObjeto= {
 
     nombre: "Juan",
-    edad: 25
+    edad: 25,
+    datos: function(){
+        let mensaje = "tu eres: " + this.nombre;
+        mensaje +=" tienes "+ this.edad + " años";
+        console.log(mensaje);
+
+    }
 
 };
-let mensaje = "tu nombre es: " + miObjeto.nombre;
-mensaje +=" tienes "+ miObjeto["edad"] + " años";
-console.log(mensaje);
+miObjeto.datos();
 
+
+let constructor = function(){
+    let objPersona = {
+        nombre: "Juan",
+        nss: 2357,
+        datosPersona: function(){
+            let nsj= "eres " + this.nombre + " el numero nss es " + this.nss;
+            console.log(nsj);
+        },
+        otroMetodo: function(parametro){
+            let numero =8;
+            console.log("La suma es: " + (numero+parametro));   
+        }
+    };
+    return objPersona;
+}
+let varObjReg = constructor(); //Crear la variable llamada objeto 
+varObjReg.datosPersona();
+varObjReg.otroMetodo(5);
 
