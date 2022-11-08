@@ -10,25 +10,53 @@ con un botón que se llame suma -->
     <title>Ejercicio Suma </title>
 </head>
 <body>
-    <h1>Ejercicio suma</h1>
-    <form id="suma">
-    PrimerValor <input type="number" name="numero1" value="55" > <br>
-    SegundoValor <input type="number" name="numero2" value="100">
+    <!-- <h1>Ejercicio suma</h1>
+    <form id="formularioSuma">
+    PrimerValor <input type="text" name="valor0" value="0" /> <br>
+    SegundoValor <input type="text" name="valor1" value="0"/>
     </form>
     <button onclick="mostrarSuma()">
         sumar
     </button>
-    <div id="sumaElmentos"></div>
+    <div id="valores"></div>  recuperar valores del formulario 
     <script>
         function mostrarSuma(){
-            let suma = document.forms['suma'] //Lo que recibe en los corchetes es el id de formularios
-            let resultado= 0;
-            for (const iterator of suma){ //Recorre un arreglo de longitud N  
-                suma += parseInt(iterator.value);
+            let formulario= document.forms['formularioSuma']
+            let resultado='';
+            let valor0= formulario ['valor0'];
+            let valor1= formulario ['valor1'];
+            resultado= parseInt(valor0.value) + parseInt(valor1.value);
+            console.log(valor0.value);
+            console.log(valor1.value);
+            console.log(resultado);
+            document.getElementById('valores').innerHTML= resultado;
+           
             }
-            document.getElementById ('sumaElementos').innerHTML= resultado; //recogemos los valores del formulario
+            
+    </script> -->
+<!-- ---------------------------------------------------------------------------------- -->
 
+<!-- EJEMPLO DOM DOCUMENT.WRITE -->
+   <!--  <h1>Ejemplo DOM document.write</h1>
+    <h2>Otro mensaje</h2>
+    <button onclick="cambio()"> Mostrar</button>
+
+    <script>
+        function cambio(){
+
+           document.write('Saludos'); /* Muestra mensajes en la página y puede suplantar la página con el msj */
+       
         }
-    </script>
+    </script> -->
+<!-- EJEMPLO DOM IMAGENES -->
+
+<h1>Dom imagenes</h1>
+<button onclick="cambiar()">cambio</button> <br>
+<img id="imagen" src="./jungkook.jpg" alt="Jungkook">
+<script>
+    function cambiar(){
+        document.getElementById('imagen').src="./Taehyung.jpg"
+    }
+</script>
 </body>
 </html>
