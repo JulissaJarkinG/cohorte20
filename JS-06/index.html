@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOM</title>
+</head>
+<body>
+    <h1 class="azul">Ejemplo de DOM</h1> 
+    <!-- Identificamos el h1 con el id "etiqueta1" -->
+    <p class="azul">Saludos desde el DOM</p>
+    <p class="azul">Soy otro párrafo</p>
+
+    <script>
+       /*  let etiqueta = document.getElementById('etiqueta1'); //A la variable etiqueta 
+        //le asignamos el identificador de etiqueta1
+        console.log('Valor de etiqueta1 '+ etiqueta.innerHTML); //Muestra el valor de la etiqueta
+
+        let parrafo1 = document.getElementById('parrafo');
+        console.log('Valor de parrafo '+ parrafo1.innerHTML);
+ */
+        /* getElementsByTagName */
+
+        let parrafos=document.getElementsByTagName('h1'); 
+        for(let i=0; i < parrafos.length; i++){//Recorre la etiqueta
+            
+            console.log(`No. ${i} - parrafos:  ${parrafos[i].innerHTML} `); //Muestra el número de e
+        }
+        /* recuperar elementos con clase con la función getElementByClassName*/ 
+        let parrafo=document.getElementsByClassName('azul');
+        console.log (`Elementos class: ${parrafo.lenght}`);
+       /*  for (let i = 0; i < etiquetas.length; i++) */ //iteración de todo el ciclo con la clase azul
+       for(let elemento of parrafo){
+           console.log(`${elemento.innerHTML}`);
+            
+        }
+/*    formularios */
+<form>
+    
+    </form>
+        
+
+
+    </script>
+</body>
+</html>
