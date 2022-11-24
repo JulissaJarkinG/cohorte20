@@ -11,12 +11,18 @@ public class Animal {
 		this.nombre= nombre;
 		this.raza=raza;
 		
-		
 	}
+
+
+
+	
+
+
 
 	public String getNombre() {
 		return nombre;
 	}
+	
 	public String getRaza() {
 		return raza;
 	}

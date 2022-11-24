@@ -16,6 +16,13 @@ public class Principal {
 		System.out.print(", tiene " + miAnimal.getEdad() + " años");
 		System.out.println(" y es un " + miAnimal.getRaza());
 		
+		Animal otroAnimal = new Animal ("Pulgas","otra");
+	
+		otroAnimal.setEdad(5);
+		
+		System.out.println("El nuevo animal es: " + otroAnimal.getNombre());
+		System.out.println("su edad es: " + otroAnimal.getEdad());
+		
 	}
 
 }
