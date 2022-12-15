@@ -1,11 +1,11 @@
-plugins {
+/*plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.0.0'
 	id 'io.spring.dependency-management' version '1.1.0'
 }
 
-group = 'com.generation'
-version = '0.1'
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
 configurations {
@@ -28,4 +28,15 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+*/
+task nuevoHola {
+     doLast {
+       println 'Un hola desde sts gradle'
+            }
+
+}
+task llamada (dependsOn: nuevoHola){
+     doLast(){
+           println "Soy Gradle"}
 }
